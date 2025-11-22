@@ -1,0 +1,17 @@
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Node (if you use Node in future)
+node_modules/
+npm-debug.log
+
+# VS Code and other editors
+.vscode/
+.idea/
+
+# Logs
+*.log

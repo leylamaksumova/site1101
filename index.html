@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name — web developer / designer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — I'm Your Name</h1>
+        <p class="lead">I build accessible, responsive websites and small web apps. I care about clean design and performance.</p>
+        <p>
+          <a class="btn primary" href="projects.html">See projects</a>
+          <a class="btn ghost" href="about.html">About me</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="featured container" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/images/project1.png" alt="Screenshot of Project 1 (placeholder)" />
+          <h3>Project One</h3>
+          <p>Short description of the project. Tech: HTML, CSS, JavaScript.</p>
+          <p class="card-links">
+            <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project2.png" alt="Screenshot of Project 2 (placeholder)" />
+          <h3>Project Two</h3>
+          <p>Short description of project two. Tech: React, Node.js (example).</p>
+          <p class="card-links">
+            <a href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/project3.png" alt="Screenshot of Project 3 (placeholder)" />
+          <h3>Project Three</h3>
+          <p>Short summary. Tech: CSS Grid, accessibility focus.</p>
+          <p class="card-links">
+            <a href="https://github.com/yourusername/project-three" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-preview container" aria-labelledby="about-preview-heading">
+      <h2 id="about-preview-heading">About Me</h2>
+      <div class="about-preview-inner">
+        <p>I’m a student learning web development. I enjoy building small projects that solve real problems. I’m currently studying SITE1101 and building this portfolio as part of the course.</p>
+        <p><a class="btn" href="about.html">Read more →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Find me on <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal behavior: year + nav toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.main-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>
