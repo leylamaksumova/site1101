@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Your Name</title>
-  <meta name="description" content="About page for Your Name — student and web developer." />
+  <title>About — Leyla Maksumova</title>
+  <meta name="description" content="About page for Leyla Maksumova — student and web developer. SITE1101 portfolio." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Your Name</a>
+      <a class="brand" href="index.html">Leyla</a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
@@ -23,17 +23,21 @@
   </header>
 
   <main class="container">
-    <section class="about-hero">
-      <div class="about-grid">
-        <div class="about-photo">
-          <img src="assets/images/profile.jpg" alt="Your Name — profile photo (placeholder)" />
-        </div>
-        <div class="about-content">
-          <h1>About Me</h1>
-          <p class="lead">I’m Your Name — a student learning web development. I enjoy building accessible, responsive websites and small web apps that solve real problems.</p>
-          <p>I’m currently enrolled in SITE1101. On this portfolio you'll find projects that demonstrate HTML, CSS, JavaScript, and thoughtful design. I’m eager to learn more about front-end development, usability, and performance optimization.</p>
-          <p><a class="btn" href="projects.html">View projects →</a></p>
-        </div>
+    <section class="about-hero about-grid" aria-labelledby="about-heading">
+      <div class="about-photo">
+        <img src="assets/images/profile.jpg" alt="Profile photo — Your Name (placeholder)" />
+      </div>
+
+      <div class="about-content">
+        <h1 id="about-heading">Hi — I’m Leyla Maksumova</h1>
+        <p class="lead">I’m a web developer and SITE1101 student focused on building accessible, responsive websites and small web apps. I enjoy crafting clean user experiences, learning modern front-end techniques, and solving real problems with simple, maintainable code.</p>
+
+        <p>I study web development and have completed multiple small projects using HTML, CSS, and JavaScript. I’m interested in front-end development, usability, and performance optimization. I’m actively expanding my skills in JavaScript frameworks, testing, and web accessibility.</p>
+
+        <p>
+          <a class="btn primary" href="projects.html">View Projects</a>
+          <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+        </p>
       </div>
     </section>
 
@@ -41,29 +45,36 @@
       <h2 id="skills-heading">Skills & Technologies</h2>
       <ul class="skills-list">
         <li>HTML5 &amp; Semantic Markup</li>
-        <li>CSS3 — Flexbox &amp; Grid</li>
-        <li>JavaScript (ES6+)</li>
-        <li>Responsive Design &amp; Accessibility</li>
+        <li>CSS3 — Flexbox &amp; Grid, responsive design</li>
+        <li>JavaScript (ES6+), DOM manipulation</li>
         <li>Version control with Git &amp; GitHub</li>
+        <li>Accessibility (WCAG basics) &amp; performance best practices</li>
       </ul>
     </section>
 
     <section class="education" aria-labelledby="edu-heading">
       <h2 id="edu-heading">Education &amp; Experience</h2>
-      <p><strong>SITE1101 — Web Development (Student)</strong><br />Coursework in fundamentals of HTML, CSS, JavaScript, and project-based learning.</p>
-      <p><strong>Projects</strong>: small web apps, landing pages, and interactive UI experiments included in this portfolio.</p>
+      <article>
+        <h3>SITE1101 — Web Development (Student)</h3>
+        <p>Hands-on coursework covering HTML, CSS, and JavaScript with project-based assessments.</p>
+      </article>
+
+      <article>
+        <h3>Projects &amp; Practice</h3>
+        <p>I build small, focused projects (landing pages, interactive widgets, mini-apps) to practice accessibility, responsive layouts, and JavaScript features. Selected projects live on the <a href="projects.html">Projects</a> page.</p>
+      </article>
     </section>
 
     <section id="contact" class="contact-section" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></p>
+      <p>Email: <a href="mailto:leylamaksumova876@gmail.com">leylamaksumova876@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/leylamaksumova" target="_blank" rel="noopener">github.com/leylamaksumova</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Your Name</p>
+      <p>&copy; <span id="year"></span> Leyla Maksumova</p>
     </div>
   </footer>
 
