@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Leyla Maksumova — Portfolio</title>
   <meta name="description" content="Personal portfolio of Your Name — web developer / designer." />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Leyla Maksumova — Portfolio" />
+  <meta property="og:description" content="I build accessible, responsive websites and small web apps. See projects and contact information." />
+  <meta property="og:image" content="https://leylamaksumova.github.io/site1101/assets/images/project1.svg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leyla Maksumova — Portfolio" />
+  <meta name="twitter:description" content="I build accessible, responsive websites and small web apps." />
+  <meta name="twitter:image" content="https://leylamaksumova.github.io/site1101/assets/images/project1.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">Leyla</a>
@@ -20,7 +30,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="container hero-inner">
         <h1>Hi — I'm Leyla Maksumova</h1>
@@ -36,17 +46,19 @@
       <h2 id="featured-heading">Featured Projects</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <img src="assets/images/project1.png" alt="Screenshot of Project 1 (placeholder)" />
-          <h3>Project One</h3>
-          <p>Short description of the project. Tech: HTML, CSS, JavaScript.</p>
+          <a href="https://www.youtube.com/watch?v=ZP1d8sk3GFE" target="_blank" rel="noopener noreferrer" aria-label="Open Project 1 video in new tab" title="Project 1 video (opens in new tab)">
+            <img src="assets/images/project1-thumb.svg" alt="Project 1 YouTube thumbnail" width="600" height="360" loading="lazy" />
+          </a>
+          <h3>Project 1: How does hardware work?</h3>
+          <p>We constructed basic logic gates using transistors and other electronic components.</p>
           <p class="card-links">
             <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">GitHub</a>
-            <a href="#" target="_blank" rel="noopener">Live</a>
+            <a href="https://www.youtube.com/watch?v=ZP1d8sk3GFE" target="_blank" rel="noopener noreferrer">Watch</a>
           </p>
         </article>
 
         <article class="project-card">
-          <img src="assets/images/project2.png" alt="Screenshot of Project 2 (placeholder)" />
+          <img src="assets/images/project2.svg" alt="Screenshot of Project Two — JS To‑Do App" width="600" height="360" loading="lazy" />
           <h3>Project Two</h3>
           <p>Short description of project two. Tech: React, Node.js (example).</p>
           <p class="card-links">
@@ -56,7 +68,7 @@
         </article>
 
         <article class="project-card">
-          <img src="assets/images/project3.png" alt="Screenshot of Project 3 (placeholder)" />
+          <img src="assets/images/project3.svg" alt="Screenshot of Project Three — React Photo Gallery" width="600" height="360" loading="lazy" />
           <h3>Project Three</h3>
           <p>Short summary. Tech: CSS Grid, accessibility focus.</p>
           <p class="card-links">

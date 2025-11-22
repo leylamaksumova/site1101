@@ -6,9 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Leyla Maksumova</title>
   <meta name="description" content="Projects portfolio — Leyla Maksumova." />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Projects — Leyla Maksumova" />
+  <meta property="og:description" content="A selection of projects by Leyla Maksumova — responsive sites and small web apps." />
+  <meta property="og:image" content="https://leylamaksumova.github.io/site1101/assets/images/project1.svg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">Leyla</a>
@@ -21,7 +28,7 @@
     </div>
   </header>
 
-  <main class="container">
+  <main id="main-content" class="container">
     <section class="projects-hero">
       <h1>Projects</h1>
       <p class="lead">A selection of projects built while learning web development. Click a card to view details, source, or a live demo.</p>
@@ -40,20 +47,22 @@
       <h2 id="projects-heading" class="sr-only">Project list</h2>
 
       <article class="project-card" data-tags="html js">
-        <img src="assets/images/project1.svg" alt="Screenshot — Project One" />
+        <a href="https://www.youtube.com/watch?v=ZP1d8sk3GFE" target="_blank" rel="noopener noreferrer" aria-label="Open Project 1 video in new tab" title="Project 1 video (opens in new tab)">
+          <img src="assets/images/project1-thumb.svg" alt="Project 1 YouTube thumbnail" width="800" height="480" loading="lazy" />
+        </a>
         <div class="card-body">
-          <h3>Portfolio Landing Page</h3>
-          <p>A responsive landing page demonstrating semantic HTML, clean CSS Grid layouts, and WCAG-friendly color contrast and structure.</p>
+          <h3>Project 1: How does hardware work?</h3>
+          <p>We constructed basic logic gates using transistors and other electronic components.</p>
           <p class="tags">Tech: HTML, CSS, Accessibility</p>
           <p class="card-links">
             <a href="https://github.com/leylamaksumova/project-one" target="_blank" rel="noopener">GitHub</a>
-            <a href="#" target="_blank" rel="noopener">Live</a>
+            <a href="https://www.youtube.com/watch?v=ZP1d8sk3GFE" target="_blank" rel="noopener noreferrer">Watch</a>
           </p>
         </div>
       </article>
 
       <article class="project-card" data-tags="js">
-        <img src="assets/images/project2.svg" alt="Screenshot — Project Two" />
+        <img src="assets/images/project2.svg" alt="Screenshot — JS To‑Do App (Project Two)" width="800" height="480" loading="lazy" />
         <div class="card-body">
           <h3>JS To‑Do App</h3>
           <p>A lightweight JavaScript to‑do app that demonstrates DOM manipulation, event handling, and persistent state via localStorage.</p>
@@ -66,7 +75,7 @@
       </article>
 
       <article class="project-card" data-tags="react">
-        <img src="assets/images/project3.svg" alt="Screenshot — Project Three" />
+        <img src="assets/images/project3.svg" alt="Screenshot — React Photo Gallery (Project Three)" width="800" height="480" loading="lazy" />
         <div class="card-body">
           <h3>React Photo Gallery</h3>
           <p>A small React app showcasing component composition, props, and fetching images from an API with graceful loading states.</p>
