@@ -24,6 +24,12 @@
         <a href="projects.html">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="theme-toggle-wrapper">
+        <input type="checkbox" id="checkbox" aria-label="Toggle dark mode">
+        <label for="checkbox" class="label">
+          <span class="icon">☀️</span>
+        </label>
+      </div>
       <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
     </div>
   </header>
@@ -94,6 +100,41 @@
         const expanded = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!expanded));
         nav.classList.toggle('open');
+      });
+    })();
+
+    // Dark mode toggle
+    (function() {
+      const checkbox = document.getElementById('checkbox');
+      const html = document.documentElement;
+      const icon = document.querySelector('.label .icon');
+      
+      // Load saved preference or use system preference
+      const savedMode = localStorage.getItem('theme-mode');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const isDarkMode = savedMode ? savedMode === 'dark' : prefersDark;
+      
+      if (isDarkMode) {
+        html.classList.add('dark-mode');
+        checkbox.checked = true;
+        icon.textContent = '🌙';
+      } else {
+        html.classList.remove('dark-mode');
+        checkbox.checked = false;
+        icon.textContent = '☀️';
+      }
+      
+      // Toggle on checkbox change
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          html.classList.add('dark-mode');
+          localStorage.setItem('theme-mode', 'dark');
+          icon.textContent = '🌙';
+        } else {
+          html.classList.remove('dark-mode');
+          localStorage.setItem('theme-mode', 'light');
+          icon.textContent = '☀️';
+        }
       });
     })();
   </script>
