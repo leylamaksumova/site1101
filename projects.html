@@ -108,62 +108,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // Simple filter behavior
-    (function () {
-      const buttons = document.querySelectorAll('.filter-btn');
-      const cards = document.querySelectorAll('.project-card');
-      buttons.forEach(btn => btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.getAttribute('data-filter');
-        cards.forEach(card => {
-          if (filter === '*' || card.dataset.tags.includes(filter)) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      }));
-    })();
-
-    // Dark mode toggle
-    (function() {
-      const checkbox = document.getElementById('checkbox');
-      const html = document.documentElement;
-      const icon = document.querySelector('.label .icon');
-      
-      // Load saved preference or use system preference
-      const savedMode = localStorage.getItem('theme-mode');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDarkMode = savedMode ? savedMode === 'dark' : prefersDark;
-      
-      if (isDarkMode) {
-        html.classList.add('dark-mode');
-        checkbox.checked = true;
-        icon.textContent = '🌙';
-      } else {
-        html.classList.remove('dark-mode');
-        checkbox.checked = false;
-        icon.textContent = '☀️';
-      }
-      
-      // Toggle on checkbox change
-      checkbox.addEventListener('change', () => {
-        if (checkbox.checked) {
-          html.classList.add('dark-mode');
-          localStorage.setItem('theme-mode', 'dark');
-          icon.textContent = '🌙';
-        } else {
-          html.classList.remove('dark-mode');
-          localStorage.setItem('theme-mode', 'light');
-          icon.textContent = '☀️';
-        }
-      });
-    })();
-    })();
-  </script>
   <script src="script.js" defer></script>
 </body>
 </html>
