@@ -155,7 +155,13 @@ p{margin:0 0 1rem 0;color:var(--muted)}
 
 /* dark mode tweaks for icons */
 html.dark-mode .icon-link{color: #2ad1b5;border-color: rgba(45,212,191,0.12);}
+
 html.dark-mode .icon-link:hover{background:linear-gradient(135deg, rgba(45,212,191,0.06), rgba(45,212,191,0.02));box-shadow:0 10px 30px rgba(45,212,191,0.08)}
+
+/* Center contact containers and make icons centered */
+.contact{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.5rem}
+.contact h3{margin:0 0 0.4rem 0}
+.contact .contact-icons{justify-content:center}
 
 /* UTILITIES */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
