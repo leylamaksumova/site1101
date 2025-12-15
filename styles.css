@@ -146,6 +146,17 @@ p{margin:0 0 1rem 0;color:var(--muted)}
 .footer-inner a{font-weight:700;color:var(--brand);transition: color 0.3s var(--ease);}
 .footer-inner a:hover{color:var(--brand-600)}
 
+/* CONTACT ICONS */
+.contact-icons{display:flex;gap:0.6rem;align-items:center}
+.icon-link{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:transparent;border:2px solid rgba(14,165,164,0.12);color:var(--brand);text-decoration:none;transition:all 0.25s var(--ease)}
+.icon-link svg{width:22px;height:22px;display:block;fill:none;stroke:currentColor;stroke-width:1.8}
+.icon-link:focus{outline:3px solid rgba(14,165,164,0.18);outline-offset:3px}
+.icon-link:hover{transform:translateY(-3px);background:linear-gradient(135deg, rgba(14,165,164,0.08), rgba(14,165,164,0.03));box-shadow:0 8px 24px rgba(14,165,164,0.12)}
+
+/* dark mode tweaks for icons */
+html.dark-mode .icon-link{color: #2ad1b5;border-color: rgba(45,212,191,0.12);}
+html.dark-mode .icon-link:hover{background:linear-gradient(135deg, rgba(45,212,191,0.06), rgba(45,212,191,0.02));box-shadow:0 10px 30px rgba(45,212,191,0.08)}
+
 /* UTILITIES */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
