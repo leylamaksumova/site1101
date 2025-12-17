@@ -1,8 +1,8 @@
 /* VARIABLES & BASE */
 :root{
-	--bg: linear-gradient(135deg, #fff1e6 0%, #ffd7e2 28%, #e8d8ff 60%, #e6f7ff 100%);
-	--bg-solid: #fff6f2;
-	--surface: #f8fafc;
+	--bg: linear-gradient(135deg, #fffaf7 0%, #fff2f6 30%, #f7efff 65%, #f1fbff 100%);
+	--bg-solid: #ffffff;
+	--surface: #ffffff;
 	--text: #0f172a;
 	--muted: #6b7280;
 	--brand: #0ea5a4; /* teal */
