@@ -31,7 +31,6 @@ html.dark-mode {
 }
 
 html.dark-mode body {
-	background: var(--bg);
 	color: var(--text);
 	transition: background 0.4s, color 0.4s;
 }
@@ -161,6 +160,31 @@ p{margin:0 0 1rem 0;color:var(--muted)}
 .about-grid{display:grid;grid-template-columns:1fr;gap:var(--gap);align-items:center;padding:1rem 0}
 .about-photo img{width:240px;height:240px;object-fit:cover;border-radius:12px}
 
+/* About sections: ensure good contrast and spacing in dark mode */
+.background, .personal-characteristics, .volunteering, .hobbies{
+	color: var(--muted);
+	padding: 0.6rem 0;
+}
+.background h2, .personal-characteristics h2, .volunteering h2, .hobbies h2{
+	color: var(--text);
+}
+html.dark-mode .background,
+html.dark-mode .personal-characteristics,
+html.dark-mode .volunteering,
+html.dark-mode .hobbies{
+	background: rgba(255,255,255,0.02);
+	border: 1px solid rgba(255,255,255,0.04);
+	padding: 1rem;
+	border-radius: 10px;
+	color: var(--text);
+}
+html.dark-mode .background p,
+html.dark-mode .personal-characteristics li,
+html.dark-mode .volunteering li,
+html.dark-mode .hobbies p{
+	color: var(--text);
+}
+
 /* FOOTER */
 .site-footer{border-top:2px solid rgba(243, 166, 195, 0.2);padding:1.25rem 0;margin-top:2rem;background:transparent}
 .footer-inner{display:flex;flex-direction:column;gap:0.5rem;align-items:center;justify-content:center}
@@ -289,7 +313,6 @@ html.dark-mode .label .icon {
 /* RESPONSIVE BREAKPOINTS */
 @media (min-width:640px){
 	.projects-grid{grid-template-columns:repeat(2,1fr)}
-	.about-grid{grid-template-columns:260px 1fr}
 	.footer-inner{flex-direction:row;justify-content:center;align-items:center;gap:1.25rem}
 }
 @media (min-width:980px){
