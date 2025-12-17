@@ -163,7 +163,7 @@ p{margin:0 0 1rem 0;color:var(--muted)}
 
 /* FOOTER */
 .site-footer{border-top:2px solid rgba(14, 165, 164, 0.2);padding:1.25rem 0;margin-top:2rem;background:transparent}
-.footer-inner{display:flex;flex-direction:column;gap:0.5rem;align-items:flex-start}
+.footer-inner{display:flex;flex-direction:column;gap:0.5rem;align-items:center;justify-content:center}
 .footer-inner p{margin:0;color:var(--muted)}
 .footer-inner a{font-weight:700;color:var(--brand);transition: color 0.3s var(--ease);}
 .footer-inner a:hover{color:var(--brand-600)}
@@ -290,7 +290,7 @@ html.dark-mode .label .icon {
 @media (min-width:640px){
 	.projects-grid{grid-template-columns:repeat(2,1fr)}
 	.about-grid{grid-template-columns:260px 1fr}
-	.footer-inner{flex-direction:row;justify-content:space-between;align-items:center}
+	.footer-inner{flex-direction:row;justify-content:center;align-items:center;gap:1.25rem}
 }
 @media (min-width:980px){
 	.projects-grid{grid-template-columns:repeat(3,1fr)}
