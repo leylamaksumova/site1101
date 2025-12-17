@@ -95,18 +95,21 @@ p{margin:0 0 1rem 0;color:var(--muted)}
 .hero h1{font-size:clamp(1.6rem, 3vw, 2.5rem);line-height:1.05}
 .hero .lead{margin-top:0.5rem}
 
-/* Highlighted phrase style: theme-aware underline that expands on hover */
+/* Highlighted phrase style: subtle underline for readability, stronger pill on hover */
 .highlight{
 	font-weight:700;
-	box-shadow: inset 0 -0.45em 0 var(--brand);
-	transition: box-shadow 220ms var(--ease), color 160ms var(--ease);
+	text-decoration: underline;
+	text-decoration-color: var(--brand);
+	text-decoration-thickness: 0.12em;
+	text-underline-offset: 0.12em;
+	transition: color 160ms var(--ease), background-color 220ms var(--ease), text-decoration-color 220ms var(--ease);
 }
 .highlight:hover{
-	box-shadow: inset 0 -1.05em 0 var(--brand-600);
+	text-decoration-color: transparent;
 	color: #fff;
+	background-color: var(--brand-600);
 	padding: 0 0.18rem;
 	border-radius: 4px;
-	transition: box-shadow 220ms var(--ease), color 160ms var(--ease), padding 160ms var(--ease);
 }
 
 /* Hero avatar + heading layout */
