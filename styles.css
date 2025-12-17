@@ -1,7 +1,7 @@
 /* VARIABLES & BASE */
 :root{
-	--bg: linear-gradient(135deg, #faf9f6 0%, #f5e6d3 25%, #e8f4f8 50%, #f0e6ff 75%, #fff5e6 100%);
-	--bg-solid: #faf9f6;
+	--bg: linear-gradient(135deg, #fff1e6 0%, #ffd7e2 28%, #e8d8ff 60%, #e6f7ff 100%);
+	--bg-solid: #fff6f2;
 	--surface: #f8fafc;
 	--text: #0f172a;
 	--muted: #6b7280;
@@ -21,8 +21,8 @@
 
 /* DARK MODE */
 html.dark-mode {
-	--bg: linear-gradient(135deg, #0d1b2a 0%, #1a3a52 25%, #2d1b4e 50%, #1b2845 75%, #0d2b3a 100%);
-	--bg-solid: #0d1b2a;
+	--bg: linear-gradient(135deg, #0b1020 0%, #2b0f3a 35%, #1a0f2e 65%, #031124 100%);
+	--bg-solid: #071025;
 	--surface: #1e293b;
 	--text: #f1f5f9;
 	--muted: #94a3b8;
