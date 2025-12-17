@@ -1,6 +1,6 @@
 /* VARIABLES & BASE */
 :root{
-	--bg: linear-gradient(135deg, #fffaf7 0%, #fff2f6 30%, #f7efff 65%, #f1fbff 100%);
+	--bg: linear-gradient(135deg, #ffffff 0%, #fffafc 30%, #fff8ff 65%, #f8ffff 100%);
 	--bg-solid: #ffffff;
 	--surface: #ffffff;
 	--text: #0f172a;
