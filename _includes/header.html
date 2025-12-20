@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+    </nav>
+
+    <div class="theme-toggle-wrapper">
+      <input type="checkbox" id="checkbox" aria-label="Toggle dark mode">
+      <label for="checkbox" class="label">
+        <span class="icon">☀️</span>
+      </label>
+    </div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
+  </div>
+</header>

@@ -1,0 +1,13 @@
+title: Leyla Maksumova
+baseurl: ""
+url: ""
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+# Optional: set language/site metadata
+lang: en
