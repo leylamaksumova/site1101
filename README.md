@@ -5,7 +5,7 @@ This repository contains a personal portfolio site built for the SITE1101 course
 Live site
 - The site is published to GitHub Pages and is available at:
 
-	https://leylamaksumova.github.io/site1101/
+	https://leylamaksumova.github.io/
 
 How to view locally
 - Open `index.html` in a browser (double-click or right-click → Open with...). No build step required.
